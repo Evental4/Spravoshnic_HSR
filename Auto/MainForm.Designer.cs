@@ -36,6 +36,7 @@
             this.HelloLabel = new System.Windows.Forms.Label();
             this.AuthButton = new System.Windows.Forms.Button();
             this.FiltrPanel = new System.Windows.Forms.Panel();
+            this.rolecomboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.FindButton = new System.Windows.Forms.Button();
             this.tipcomboBox = new System.Windows.Forms.ComboBox();
@@ -43,7 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.FiltrButton = new System.Windows.Forms.Button();
-            this.rolecomboBox = new System.Windows.Forms.ComboBox();
             this.UserPanel.SuspendLayout();
             this.FiltrPanel.SuspendLayout();
             this.SuspendLayout();
@@ -139,11 +139,28 @@
             this.FiltrPanel.Size = new System.Drawing.Size(1032, 139);
             this.FiltrPanel.TabIndex = 10;
             // 
+            // rolecomboBox
+            // 
+            this.rolecomboBox.FormattingEnabled = true;
+            this.rolecomboBox.Items.AddRange(new object[] {
+            "",
+            "DD",
+            "SapDD",
+            "SapDD or DD",
+            "Sap",
+            "Hiler",
+            "Defens",
+            "Debaffer"});
+            this.rolecomboBox.Location = new System.Drawing.Point(134, 40);
+            this.rolecomboBox.Name = "rolecomboBox";
+            this.rolecomboBox.Size = new System.Drawing.Size(156, 28);
+            this.rolecomboBox.TabIndex = 10;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(5, 110);
+            this.label4.Location = new System.Drawing.Point(8, 110);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 9;
@@ -222,23 +239,6 @@
             this.FiltrButton.Text = "Фильтр";
             this.FiltrButton.UseVisualStyleBackColor = true;
             this.FiltrButton.Click += new System.EventHandler(this.FiltrButton_Click);
-            // 
-            // rolecomboBox
-            // 
-            this.rolecomboBox.FormattingEnabled = true;
-            this.rolecomboBox.Items.AddRange(new object[] {
-            "",
-            "DD",
-            "SapDD",
-            "SapDD or DD",
-            "Sap",
-            "Hiler",
-            "Defens",
-            "Debaffer"});
-            this.rolecomboBox.Location = new System.Drawing.Point(134, 40);
-            this.rolecomboBox.Name = "rolecomboBox";
-            this.rolecomboBox.Size = new System.Drawing.Size(156, 28);
-            this.rolecomboBox.TabIndex = 10;
             // 
             // MainForm
             // 

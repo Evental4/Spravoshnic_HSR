@@ -89,6 +89,7 @@
             this.AddSelectBTN.TabIndex = 14;
             this.AddSelectBTN.Text = "в Избранное";
             this.AddSelectBTN.UseVisualStyleBackColor = false;
+            this.AddSelectBTN.Click += new System.EventHandler(this.AddSelectBTN_Click);
             // 
             // pytelabel
             // 
@@ -125,6 +126,7 @@
             this.PytepictureBox.Location = new System.Drawing.Point(308, 377);
             this.PytepictureBox.Name = "PytepictureBox";
             this.PytepictureBox.Size = new System.Drawing.Size(60, 56);
+            this.PytepictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PytepictureBox.TabIndex = 18;
             this.PytepictureBox.TabStop = false;
             // 
@@ -133,6 +135,7 @@
             this.TippictureBox.Location = new System.Drawing.Point(308, 439);
             this.TippictureBox.Name = "TippictureBox";
             this.TippictureBox.Size = new System.Drawing.Size(60, 56);
+            this.TippictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.TippictureBox.TabIndex = 19;
             this.TippictureBox.TabStop = false;
             // 

@@ -93,9 +93,19 @@ namespace Auto
 
         }
 
-        private void Selbutton_Click(object sender, EventArgs e)
+        
+
+        private void AddSelectBTN_Click(object sender, EventArgs e)
         {
-            SelectForm.my_pers_list.Add(pers);
+            if(SelectForm.my_pers_list.ContainsKey(pers))
+            {
+                SelectForm.my_pers_list[pers]++;
+            }
+            else
+            {
+                SelectForm.my_pers_list.Add(pers, 1);
+            }
+            
         }
     }
 }
