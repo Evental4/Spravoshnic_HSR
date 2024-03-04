@@ -72,10 +72,50 @@ namespace Auto
                 Controls.Add(lbl5);
                 #endregion
 
-                y += 150;
+                /*
+                #region Статы артов
+                NumericUpDown numericUpDown1 = new NumericUpDown();
+                numericUpDown1.Location = new Point(900, y+ 100);
+                numericUpDown1.Size = new System.Drawing.Size(300, 30);
+                numericUpDown1.Value = new decimal();
+                #endregion
+                */
+
+                #region кнопка удаления обЪекта
+                Button btn1 = new Button();
+                btn1.Location = new Point(900,y);
+                btn1.Size = new Size(130,30);
+                btn1.Text = "Удалить";
+                btn1.Click += new EventHandler(DeleteClik);
+               Controls.Add(btn1);
+                #endregion
+
+
+                y += 200;
             }
         }
 
-        
+        void DeleteClik(object sender, EventArgs e)
+        {
+            int i = 0;
+            Button btn = (Button)sender;
+            Dictionary<Pers, int> my_pers = new Dictionary<Pers, int>();
+            foreach (KeyValuePair<Pers, int> my_per in my_pers_list) 
+            {
+                Pers pers = my_per.Key;
+                if(btn.Location == new Point(900, 30+200*i))
+                {
+
+                }
+                else
+                {
+                    my_pers[my_per.Key] = my_per.Value;
+                }
+                i++;
+
+            }
+            my_pers_list = my_pers;
+        }
+
     }
 }

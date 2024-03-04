@@ -171,11 +171,11 @@ namespace Auto
         {
             if(FiltrPanel.Height > 33)
             {
-                FiltrPanel.Height = 33;                
+                FiltrPanel.Height = 35;                
             }
             else
             {
-                FiltrPanel.Height = 120;
+                FiltrPanel.Height = 140;
             }
         }
 

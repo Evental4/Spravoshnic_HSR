@@ -53,21 +53,22 @@
             this.ViewPanel.AutoScroll = true;
             this.ViewPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ViewPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ViewPanel.Location = new System.Drawing.Point(0, 194);
+            this.ViewPanel.Location = new System.Drawing.Point(0, 195);
             this.ViewPanel.Name = "ViewPanel";
-            this.ViewPanel.Size = new System.Drawing.Size(1032, 461);
+            this.ViewPanel.Size = new System.Drawing.Size(1032, 460);
             this.ViewPanel.TabIndex = 8;
             this.ViewPanel.Resize += new System.EventHandler(this.ViewPanel_Resize);
             // 
             // UserPanel
             // 
-            this.UserPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.UserPanel.BackColor = System.Drawing.Color.MediumBlue;
             this.UserPanel.Controls.Add(this.SelectFormBTN);
             this.UserPanel.Controls.Add(this.HelpButton);
             this.UserPanel.Controls.Add(this.RegButton);
             this.UserPanel.Controls.Add(this.HelloLabel);
             this.UserPanel.Controls.Add(this.AuthButton);
             this.UserPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.UserPanel.ForeColor = System.Drawing.SystemColors.WindowText;
             this.UserPanel.Location = new System.Drawing.Point(0, 0);
             this.UserPanel.Name = "UserPanel";
             this.UserPanel.Size = new System.Drawing.Size(1032, 55);
@@ -114,7 +115,7 @@
             // 
             // AuthButton
             // 
-            this.AuthButton.Location = new System.Drawing.Point(19, 12);
+            this.AuthButton.Location = new System.Drawing.Point(3, 10);
             this.AuthButton.Name = "AuthButton";
             this.AuthButton.Size = new System.Drawing.Size(136, 37);
             this.AuthButton.TabIndex = 0;
@@ -136,7 +137,7 @@
             this.FiltrPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.FiltrPanel.Location = new System.Drawing.Point(0, 55);
             this.FiltrPanel.Name = "FiltrPanel";
-            this.FiltrPanel.Size = new System.Drawing.Size(1032, 139);
+            this.FiltrPanel.Size = new System.Drawing.Size(1032, 140);
             this.FiltrPanel.TabIndex = 10;
             // 
             // rolecomboBox
