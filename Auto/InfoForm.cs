@@ -90,8 +90,13 @@ namespace Auto
                 PytepictureBox.Load("../../Pictures/Путь_Изобилие.png");
             }
             #endregion
-
+            try
+            { 
+                InfotextBox.Text = System.IO.File.ReadAllText("../../Pictures/" + pers.name + ".txt");
+            }
+            catch (Exception) { }
         }
+
 
         
 
@@ -106,6 +111,11 @@ namespace Auto
                 SelectForm.my_pers_list.Add(pers, 1);
             }
             
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://honkai-star-rail.fandom.com/ru/wiki/%D0%91%D1%80%D0%BE%D0%BD%D1%8F");
         }
     }
 }

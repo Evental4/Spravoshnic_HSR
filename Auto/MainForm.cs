@@ -55,7 +55,7 @@ namespace Auto
 
     public partial class MainForm : Form
     {
-        List <Pers> Pers_list = new List <Pers> ();
+        public static List<Pers> Pers_list = new List <Pers> ();
         public static string Login = "";
 
         public MainForm()
@@ -83,7 +83,7 @@ namespace Auto
                 Pers_list[i].btn.Location = new Point(x, y + 190);
                 Pers_list[i].btn.Size = new Size(150, 40);
                 Pers_list[i].btn.UseVisualStyleBackColor = true;
-                Pers_list[i].btn.Click += new EventHandler(button1_Click);
+                Pers_list[i].btn.Click += new EventHandler(Pers_Click);
                 ViewPanel.Controls.Add(Pers_list[i].btn);
 
                 Pers_list[i].pic.Location = new Point(x, y);
@@ -101,7 +101,7 @@ namespace Auto
             #endregion
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public static void Pers_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < Pers_list.Count; ++i)
             {

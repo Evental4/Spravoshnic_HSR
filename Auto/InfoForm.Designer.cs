@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.InfotextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.AddSelectBTN = new System.Windows.Forms.Button();
             this.pytelabel = new System.Windows.Forms.Label();
@@ -38,6 +38,8 @@
             this.rolelabel = new System.Windows.Forms.Label();
             this.PytepictureBox = new System.Windows.Forms.PictureBox();
             this.TippictureBox = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PytepictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TippictureBox)).BeginInit();
@@ -62,22 +64,26 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // InfotextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(387, 78);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(307, 464);
-            this.textBox1.TabIndex = 2;
+            this.InfotextBox.Enabled = false;
+            this.InfotextBox.Location = new System.Drawing.Point(387, 78);
+            this.InfotextBox.Multiline = true;
+            this.InfotextBox.Name = "InfotextBox";
+            this.InfotextBox.ReadOnly = true;
+            this.InfotextBox.Size = new System.Drawing.Size(425, 464);
+            this.InfotextBox.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(383, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.Size = new System.Drawing.Size(111, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Описание";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // AddSelectBTN
             // 
@@ -139,11 +145,38 @@
             this.TippictureBox.TabIndex = 19;
             this.TippictureBox.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(822, 53);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(166, 25);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Базывые статы";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.5F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.5F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(827, 82);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.92086F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.07914F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(296, 460);
+            this.tableLayoutPanel1.TabIndex = 21;
+            // 
             // InfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1135, 554);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.TippictureBox);
             this.Controls.Add(this.PytepictureBox);
             this.Controls.Add(this.rolelabel);
@@ -151,7 +184,7 @@
             this.Controls.Add(this.pytelabel);
             this.Controls.Add(this.AddSelectBTN);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.InfotextBox);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -170,7 +203,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox InfotextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button AddSelectBTN;
         private System.Windows.Forms.Label pytelabel;
@@ -178,5 +211,7 @@
         private System.Windows.Forms.Label rolelabel;
         private System.Windows.Forms.PictureBox PytepictureBox;
         private System.Windows.Forms.PictureBox TippictureBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
