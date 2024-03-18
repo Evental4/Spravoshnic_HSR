@@ -115,7 +115,15 @@ namespace Auto
 
         private void label2_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://honkai-star-rail.fandom.com/ru/wiki/%D0%91%D1%80%D0%BE%D0%BD%D1%8F");
+
+            try
+            {
+                System.Diagnostics.Process.Start(pers.Web);
+            }
+            catch (Exception){  }
+            
         }
+
+        
     }
 }

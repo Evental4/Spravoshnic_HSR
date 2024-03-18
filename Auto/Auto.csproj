@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPersForm.Designer.cs">
+      <DependentUpon>AddPersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AuthForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="SelectForm.Designer.cs">
       <DependentUpon>SelectForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddPersForm.resx">
+      <DependentUpon>AddPersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AuthForm.resx">
       <DependentUpon>AuthForm.cs</DependentUpon>
     </EmbeddedResource>

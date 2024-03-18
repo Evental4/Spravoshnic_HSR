@@ -24,12 +24,13 @@ namespace Auto
         public string Atc;
         public string Spid;
         public string Rancs_pop;
+        public string Web;
         public Button btn;
         public PictureBox pic;
         public PictureBox path;
         public PictureBox element;
 
-        public Pers(string _name, string _role, string _tip, string _pyte, string _Hp, string _Def, string _Atc, string _Spid, string _Rancspop)
+        public Pers(string _name, string _role, string _tip, string _pyte, string _Hp, string _Def, string _Atc, string _Spid, string _Rancspop, string _Web)
         {
             name = _name;
             role = _role;
@@ -40,6 +41,7 @@ namespace Auto
             Atc = _Atc;
             Spid = _Spid;
             Rancs_pop = _Rancspop;
+            Web = _Web; 
             btn = new Button();
             pic = new PictureBox();
             path = new PictureBox();
@@ -67,7 +69,7 @@ namespace Auto
             foreach (string str in strs)
             {
                 string[] parts = str.Split(new string[] { ", " }, StringSplitOptions.None);
-                Pers_list.Add(new Pers(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7], parts[8]));
+                Pers_list.Add(new Pers(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7], parts[8], parts[9]));
             }
 
 
@@ -245,6 +247,11 @@ namespace Auto
             selectForm.ShowDialog();
         }
 
-        
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            AddPersForm selectForm = new AddPersForm();
+            selectForm.ShowDialog();
+        }
     }
+
 }

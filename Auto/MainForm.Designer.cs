@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ViewPanel = new System.Windows.Forms.Panel();
             this.UserPanel = new System.Windows.Forms.Panel();
             this.SelectFormBTN = new System.Windows.Forms.Button();
@@ -44,8 +45,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.FiltrButton = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.добавлениеОбъектаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UserPanel.SuspendLayout();
             this.FiltrPanel.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ViewPanel
@@ -76,7 +80,7 @@
             // 
             // SelectFormBTN
             // 
-            this.SelectFormBTN.Location = new System.Drawing.Point(547, 12);
+            this.SelectFormBTN.Location = new System.Drawing.Point(729, 10);
             this.SelectFormBTN.Name = "SelectFormBTN";
             this.SelectFormBTN.Size = new System.Drawing.Size(156, 37);
             this.SelectFormBTN.TabIndex = 4;
@@ -86,7 +90,7 @@
             // 
             // HelpButton
             // 
-            this.HelpButton.Location = new System.Drawing.Point(892, 12);
+            this.HelpButton.Location = new System.Drawing.Point(891, 10);
             this.HelpButton.Name = "HelpButton";
             this.HelpButton.Size = new System.Drawing.Size(129, 37);
             this.HelpButton.TabIndex = 3;
@@ -96,7 +100,7 @@
             // 
             // RegButton
             // 
-            this.RegButton.Location = new System.Drawing.Point(724, 12);
+            this.RegButton.Location = new System.Drawing.Point(567, 10);
             this.RegButton.Name = "RegButton";
             this.RegButton.Size = new System.Drawing.Size(156, 37);
             this.RegButton.TabIndex = 2;
@@ -241,6 +245,20 @@
             this.FiltrButton.UseVisualStyleBackColor = true;
             this.FiltrButton.Click += new System.EventHandler(this.FiltrButton_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавлениеОбъектаToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(191, 48);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // добавлениеОбъектаToolStripMenuItem
+            // 
+            this.добавлениеОбъектаToolStripMenuItem.Name = "добавлениеОбъектаToolStripMenuItem";
+            this.добавлениеОбъектаToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.добавлениеОбъектаToolStripMenuItem.Text = "Добавить персонажа";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -260,6 +278,7 @@
             this.UserPanel.PerformLayout();
             this.FiltrPanel.ResumeLayout(false);
             this.FiltrPanel.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -281,6 +300,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox rolecomboBox;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem добавлениеОбъектаToolStripMenuItem;
     }
 }
 
