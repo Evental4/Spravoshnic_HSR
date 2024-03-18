@@ -16,5 +16,21 @@ namespace Auto
         {
             InitializeComponent();
         }
+
+        private void Sevebutton_Click(object sender, EventArgs e)
+        {
+            System.IO.File.AppendAllText("Pers.txt" ,
+                                                      Environment.NewLine +
+                                                      NameTextBox.Text + ", " +
+                                                      RoleComboBox.Text + ", " +
+                                                      TipComboBox.Text + ", " +
+                                                      PythComboBox.Text + ", " +
+                                                      HpTextBox.Text + ", " +
+                                                      DefTextBox.Text + ", " +
+                                                      AtcTextBox.Text + ", " +
+                                                      SpidTextBox.Text + ", " +
+                                                      RancsTextBox.Text + ", " +
+                                                      WebTextBox.Text + ", ");
+        }
     }
 }

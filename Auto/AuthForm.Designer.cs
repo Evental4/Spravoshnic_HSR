@@ -52,7 +52,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(17, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 25);
+            this.label1.Size = new System.Drawing.Size(124, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Введите логин";
             // 
@@ -60,15 +60,16 @@
             // 
             this.LoginTextBox.Location = new System.Drawing.Point(22, 52);
             this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.Size = new System.Drawing.Size(274, 30);
+            this.LoginTextBox.Size = new System.Drawing.Size(274, 26);
             this.LoginTextBox.TabIndex = 2;
+            
             // 
             // PassTextBox
             // 
             this.PassTextBox.Location = new System.Drawing.Point(22, 133);
             this.PassTextBox.Name = "PassTextBox";
             this.PassTextBox.PasswordChar = '*';
-            this.PassTextBox.Size = new System.Drawing.Size(274, 30);
+            this.PassTextBox.Size = new System.Drawing.Size(274, 26);
             this.PassTextBox.TabIndex = 4;
             // 
             // label2
@@ -76,13 +77,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(17, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(161, 25);
+            this.label2.Size = new System.Drawing.Size(135, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Введите пароль";
             // 
             // AuthForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(326, 239);
             this.Controls.Add(this.PassTextBox);

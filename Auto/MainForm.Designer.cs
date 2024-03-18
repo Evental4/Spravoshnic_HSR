@@ -250,14 +250,14 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.добавлениеОбъектаToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(191, 48);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(191, 26);
             // 
             // добавлениеОбъектаToolStripMenuItem
             // 
             this.добавлениеОбъектаToolStripMenuItem.Name = "добавлениеОбъектаToolStripMenuItem";
             this.добавлениеОбъектаToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.добавлениеОбъектаToolStripMenuItem.Text = "Добавить персонажа";
+            this.добавлениеОбъектаToolStripMenuItem.Click += new System.EventHandler(this.добавлениеОбъектаToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -265,6 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1032, 655);
+            this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.ViewPanel);
             this.Controls.Add(this.FiltrPanel);
             this.Controls.Add(this.UserPanel);
@@ -274,6 +275,7 @@
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.ContextMenuStripChanged += new System.EventHandler(this.добавлениеОбъектаToolStripMenuItem_Click);
             this.UserPanel.ResumeLayout(false);
             this.UserPanel.PerformLayout();
             this.FiltrPanel.ResumeLayout(false);

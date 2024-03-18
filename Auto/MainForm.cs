@@ -50,7 +50,12 @@ namespace Auto
             btn.Font = new Font("Microsoft Sans Serif", 12F);
             btn.Text = name;
             pic.SizeMode = PictureBoxSizeMode.Zoom;
-            pic.Load("../../Pictures/" + name + ".png");
+            try
+            {
+                pic.Load("../../Pictures/" + name + ".png");
+            }
+            catch (Exception){ }
+
         }
     }
     #endregion
@@ -59,6 +64,8 @@ namespace Auto
     {
         public static List<Pers> Pers_list = new List <Pers> ();
         public static string Login = "";
+        System.Media.SoundPlayer player_error = new System.Media.SoundPlayer(@"../../Sound/error_myz.wav");
+       // System.Media.SoundPlayer player_auth = new System.Media.SoundPlayer(@"../../Sound/");
 
         public MainForm()
         {
@@ -247,10 +254,23 @@ namespace Auto
             selectForm.ShowDialog();
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+       
+
+        private void добавлениеОбъектаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddPersForm selectForm = new AddPersForm();
-            selectForm.ShowDialog();
+            if (AuthForm.isAdmin)
+            {
+
+                AddPersForm selectForm = new AddPersForm();
+                selectForm.ShowDialog();
+            }
+            else
+            {
+                player_error.Play();
+                MessageBox.Show("Нельзя тебе это, чудила");
+            }
+
+
         }
     }
 

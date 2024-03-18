@@ -57,7 +57,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 25);
+            this.label1.Size = new System.Drawing.Size(40, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Имя";
             // 
@@ -65,14 +65,14 @@
             // 
             this.NameTB.Location = new System.Drawing.Point(12, 69);
             this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(298, 30);
+            this.NameTB.Size = new System.Drawing.Size(298, 26);
             this.NameTB.TabIndex = 2;
             // 
             // FamilyTB
             // 
             this.FamilyTB.Location = new System.Drawing.Point(12, 138);
             this.FamilyTB.Name = "FamilyTB";
-            this.FamilyTB.Size = new System.Drawing.Size(298, 30);
+            this.FamilyTB.Size = new System.Drawing.Size(298, 26);
             this.FamilyTB.TabIndex = 4;
             // 
             // label2
@@ -80,7 +80,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 25);
+            this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Фамилия";
             // 
@@ -88,7 +88,7 @@
             // 
             this.LoginTB.Location = new System.Drawing.Point(12, 210);
             this.LoginTB.Name = "LoginTB";
-            this.LoginTB.Size = new System.Drawing.Size(298, 30);
+            this.LoginTB.Size = new System.Drawing.Size(298, 26);
             this.LoginTB.TabIndex = 6;
             // 
             // label3
@@ -96,7 +96,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 182);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 25);
+            this.label3.Size = new System.Drawing.Size(55, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Логин";
             // 
@@ -105,7 +105,7 @@
             this.PassTB.Location = new System.Drawing.Point(12, 290);
             this.PassTB.Name = "PassTB";
             this.PassTB.PasswordChar = '*';
-            this.PassTB.Size = new System.Drawing.Size(298, 30);
+            this.PassTB.Size = new System.Drawing.Size(298, 26);
             this.PassTB.TabIndex = 8;
             // 
             // label4
@@ -113,7 +113,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 262);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 25);
+            this.label4.Size = new System.Drawing.Size(67, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Пароль";
             // 
@@ -122,7 +122,7 @@
             this.RePassTB.Location = new System.Drawing.Point(12, 372);
             this.RePassTB.Name = "RePassTB";
             this.RePassTB.PasswordChar = '*';
-            this.RePassTB.Size = new System.Drawing.Size(298, 30);
+            this.RePassTB.Size = new System.Drawing.Size(298, 26);
             this.RePassTB.TabIndex = 10;
             // 
             // label5
@@ -130,13 +130,13 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 344);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(237, 25);
+            this.label5.Size = new System.Drawing.Size(194, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Подтверждение пароля";
             // 
             // RegForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(322, 490);
             this.Controls.Add(this.RePassTB);
@@ -154,6 +154,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RegForm";
             this.Text = "RegForm";
+            this.Load += new System.EventHandler(this.RegForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

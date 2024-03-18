@@ -15,6 +15,8 @@ namespace Auto
     {
         public static string name = "";
         public static string family = "";
+        public static bool isAdmin;
+
 
         public AuthForm()
         {
@@ -38,11 +40,14 @@ namespace Auto
                     name = parts[0];
                     family = parts[1];
                     MainForm.Login = parts[2];
+                    isAdmin = Convert.ToBoolean(Convert.ToInt32 (parts[4]));
                     Close();
                     return;
                 }
             }            
             MessageBox.Show("Неправильный логин/пароль");            
         }
+
+        
     }
 }
